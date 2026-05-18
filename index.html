@@ -1,149 +1,528 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikri Taufan Aziz - Senior Back End Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pikri Taufan Aziz — Technical Lead</title>
+<meta name="description" content="Pikri Taufan Aziz — Technical Lead and Software Engineer based in Jakarta. Go, microservices, gRPC, Kafka, AWS." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="palette-emerald intensity-balanced type-editorial">
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="nav-logo">Pikri Taufan Aziz</a>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- ============= NAV ============= -->
+<nav class="nav">
+  <div class="nav-logo">
+    <span class="dot"></span>
+    <span>Pikri<i style="font-style:italic;color:var(--cyan)">.</i>dev</span>
+  </div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta"><span class="dot"></span> Tech Lead · PT. DBO</a>
+</nav>
+
+<!-- ============= HERO ============= -->
+<section class="hero" data-screen-label="01 Hero">
+  <div class="hero-canvas"></div>
+
+  <!-- floating decorative 3D icons -->
+  <div class="hero-icon" data-depth="0.6" data-rot="-12" style="top: 14%; left: 8%;">
+    <svg viewBox="0 0 100 100"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs><polygon points="50,8 92,32 92,68 50,92 8,68 8,32" fill="none" stroke="url(#g1)" stroke-width="1.5"/><polygon points="50,8 92,32 50,56 8,32" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.5"/><polygon points="92,32 92,68 50,56" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.5"/></svg>
+  </div>
+  <div class="hero-icon" data-depth="1.2" data-rot="22" style="top: 68%; left: 14%; width: 60px; height: 60px;">
+    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="50" cy="50" r="26" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.6"/><circle cx="50" cy="50" r="6" fill="#5eead4"/></svg>
+  </div>
+  <div class="hero-icon" data-depth="0.8" data-rot="8" style="top: 22%; right: 6%; width: 90px; height: 90px;">
+    <svg viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" fill="none" stroke="#10b981" stroke-width="1.5" transform="rotate(15 50 50)"/><rect x="20" y="20" width="60" height="60" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.5" transform="rotate(30 50 50)"/><rect x="20" y="20" width="60" height="60" fill="none" stroke="#5eead4" stroke-width="0.5" opacity="0.4" transform="rotate(45 50 50)"/></svg>
+  </div>
+  <div class="hero-icon" data-depth="1.4" data-rot="-30" style="top: 72%; right: 18%; width: 50px; height: 50px;">
+    <svg viewBox="0 0 100 100"><path d="M50,10 L90,50 L50,90 L10,50 Z" fill="none" stroke="#5eead4" stroke-width="1.5"/><path d="M50,30 L70,50 L50,70 L30,50 Z" fill="#10b981" opacity="0.4"/></svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-meta">
+        <span class="badge">v1.0 · Portfolio</span>
+        <span>6.2088° S · 106.8456° E</span>
+        <span data-clock>—</span>
+      </div>
+      <h1>
+        Architecting<br/>
+        <span class="ital">resilient</span> systems<br/>
+        from the <span class="stroke">monolith</span> out.
+      </h1>
+      <p class="hero-tag">
+        Pikri Taufan Aziz — technical lead and backend engineer turning monoliths into microservices, slow APIs into gRPC, and shipping cores that outlive their first deploys.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#work" class="btn btn-primary">
+          Notable work
+          <svg class="arrow" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          Get in touch
+        </a>
+      </div>
+    </div>
+    <div class="hero-side"></div>
+  </div>
+
+  <div class="status-strip">
+    <div class="col">
+      <span>Currently</span>
+      <span class="val">Tech Lead @ PT. DBO</span>
+    </div>
+    <div class="col" style="text-align:center">
+      <span>Specialization</span>
+      <span class="val">Microservices · Go · Event-Driven</span>
+    </div>
+    <div class="col" style="text-align:right">
+      <span>Based in</span>
+      <span class="val">Jakarta, Indonesia</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- ============= ABOUT ============= -->
+<section id="about" class="section-pad" data-screen-label="02 About">
+  <span class="sec-label"><span class="idx">02</span> About</span>
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">A brief introduction</span>
+      <h2 class="about-h" style="margin-top:24px">
+        I lead engineers<br/>
+        the way I'd<br/>
+        <span class="ital">tune a system</span>.
+      </h2>
+    </div>
+    <div class="reveal">
+      <div class="about-body">
+        <p>
+          Five years deep in backend and platform work — the part of the stack no user ever sees, but every user feels. <em>The boring middle.</em> The layer between intent and durability.
+        </p>
+        <p>
+          I started inside enterprise IT at Pertamina Hulu Energi, kept the lights on for C#, VB, and Oracle, then traded that for Go, microservices, and the discomfort of leading rather than only shipping.
+        </p>
+        <p>
+          Today I'm Technical Coordinator at PT. DBO, mentoring engineers, breaking apart monoliths, and arguing — politely — for boring infrastructure that survives the next product pivot.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><div class="num">5+</div><div class="label">Years shipping</div></div>
+        <div class="stat"><div class="num">1</div><div class="label">Monolith retired</div></div>
+        <div class="stat"><div class="num">3.25</div><div class="label">GPA / 4.00</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= SKILLS ============= -->
+<section id="skills" class="section-pad" data-screen-label="03 Skills" style="padding-top:60px">
+  <span class="sec-label"><span class="idx">03</span> Toolkit</span>
+  <div class="container">
+    <h2 class="skills-h reveal">
+      Tools of the <span class="ital">trade</span>
+    </h2>
+  </div>
+
+  <div class="marquee reveal">
+    <div class="marquee-track">
+      <span class="item">Go <span class="sep"></span></span>
+      <span class="item ital">PostgreSQL <span class="sep"></span></span>
+      <span class="item">gRPC <span class="sep"></span></span>
+      <span class="item ital">Kafka <span class="sep"></span></span>
+      <span class="item">Docker <span class="sep"></span></span>
+      <span class="item ital">Kubernetes <span class="sep"></span></span>
+      <span class="item">AWS <span class="sep"></span></span>
+      <span class="item ital">Redis <span class="sep"></span></span>
+    </div>
+  </div>
+  <div class="marquee reverse reveal" style="border-top:none">
+    <div class="marquee-track">
+      <span class="item ital">Microservices <span class="sep"></span></span>
+      <span class="item">RabbitMQ <span class="sep"></span></span>
+      <span class="item ital">OpenSearch <span class="sep"></span></span>
+      <span class="item">MongoDB <span class="sep"></span></span>
+      <span class="item ital">Jenkins <span class="sep"></span></span>
+      <span class="item">GitHub Actions <span class="sep"></span></span>
+      <span class="item ital">Laravel <span class="sep"></span></span>
+      <span class="item">Linux <span class="sep"></span></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="skills-grid reveal-stagger">
+      <div class="skill-cell">
+        <div class="num">// 01</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><circle cx="28" cy="28" r="22" fill="none" stroke="#10b981" stroke-width="1.5"/><ellipse cx="28" cy="28" rx="22" ry="9" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.7"/><ellipse cx="28" cy="28" rx="9" ry="22" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.7"/></svg>
         </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container">
-            <h1 class="hero-title">Pikri Taufan Aziz </h1>
-            <p class="hero-subtitle">I am a <span id="typed-text"></span></p>
-            <div class="hero-links">
-                <a href="https://github.com/Trickster-ID" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/pikri/" target="_blank">LinkedIn</a>
-            </div>
+        <div class="name">Backend (Go)</div>
+        <div class="desc">Go services, REST and gRPC APIs, WebSockets — the daily language for everything I ship.</div>
+        <div class="level" style="--lvl:94%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 02</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><path d="M28,6 L48,18 L48,38 L28,50 L8,38 L8,18 Z" fill="none" stroke="#10b981" stroke-width="1.5"/><path d="M28,6 L28,28 L8,18 M28,28 L48,18 M28,28 L28,50" stroke="#5eead4" stroke-width="1" opacity="0.7" fill="none"/></svg>
         </div>
-    </header>
-
-    <main>
-        <section id="about" class="about-section content-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    A dedicated and experienced Senior Back End Engineer based in Jakarta, Indonesia. With a strong background in leading teams to maintain and develop core applications, I excel at solving complex technical problems and coordinating across departments to deliver high-quality results. My experience includes designing technical reference documents, developing new features, and continuously improving business logic to enhance performance and reduce operational costs.
-                </p>
-            </div>
-        </section>
-
-        <section id="experience" class="experience-section content-section">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Section Head of Backend Engineer </h3>
-                            <p class="timeline-company">PT. DBO</p>
-                            <span class="timeline-date">March 2023 - Present </span>
-                            <ul>
-                                <li>Led a team to maintain and develop core applications, solving technical problems and coordinating with other teams.</li>
-                                <li>Set up code pipelines for AWS and Bitbucket to streamline deployment.</li>
-                                <li>Delivered the "Order Service Project" to take over from a vendor, significantly reducing operational costs and increasing performance.</li>
-                                <li>Successfully managed a "Transaction Data Migration" of approximately 80 million rows.</li>
-                                <li>Implemented gRPC between Golang microservices and used OpenSearch to boost integration and search performance.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Application Programmer </h3>
-                             <p class="timeline-company">PT. Pertamina Hulu Energi</p>
-                            <span class="timeline-date">March 2020 - February 2023 (3 years) </span>
-                            <ul>
-                                <li>Maintained and enhanced existing applications using C#, VB, and JavaScript with SQL Server/Oracle databases.</li>
-                                <li>Implemented Agile SDLC methodologies in application development.</li>
-                                <li>Developed several applications using Wavemaker, a low-code platform with Java for the back-end and JavaScript for the front-end.</li>
-                                <li>Supervised projects and acted as an advisor.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section content-section">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid-icons">
-                    <div class="skill-item"><i class="fa-brands fa-golang"></i><span>Go</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-database"></i><span>SQL</span></div>
-                    <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-                    <div class="skill-item"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-terminal"></i><span>Shell Script</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-code"></i><span>C#</span></div>
-                    
-                    <div class="skill-item"><i class="fa-solid fa-server"></i><span>MySQL</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-database"></i><span>Postgres</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-magnifying-glass"></i><span>OpenSearch</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
-                    
-                    <div class="skill-item"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
-                    <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-bolt"></i><span>gRPC API</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-paper-plane"></i><span>Rest API</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-cubes"></i><span>Redis</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-envelope"></i><span>RabbitMQ</span></div>
-                    <div class="skill-item"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
-                    <div class="skill-item"><i class="fa-brands fa-azure"></i><span>Azure DevOps</span></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section content-section">
-            <div class="container">
-                <h2>Key Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Order Service Project</h3>
-                        <p>Delivered a core application to take over from a vendor, which successfully reduced operational costs and increased overall performance. Supported by a massive migration of 80 million transaction data rows.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Manager App Project</h3>
-                        <p>Delivered a complex application with 41 dependency services to replace a vendor's solution, leading to reduced costs and enhanced performance.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Performance Optimization</h3>
-                        <p>Improved system performance by implementing gRPC for faster communication between Golang microservices and integrating an OpenSearch Database for superior search capabilities.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section content-section">
-             <div class="container">
-                <h2>Get In Touch</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to contact me.</p>
-                <p><strong>Email:</strong> <a href="mailto:pikritaufanaziz@gmail.com">pikritaufanaziz@gmail.com </a></p>
-                <p><strong>Phone:</strong> +6285810333389 </p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Pikri Taufan Aziz. All Rights Reserved.</p>
+        <div class="name">Microservices</div>
+        <div class="desc">Decomposing monoliths without setting the org on fire. Big-bang and strangler patterns alike.</div>
+        <div class="level" style="--lvl:90%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 03</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><rect x="6" y="6" width="44" height="44" rx="3" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="18" cy="28" r="3" fill="#5eead4"/><circle cx="28" cy="28" r="3" fill="#5eead4"/><circle cx="38" cy="28" r="3" fill="#5eead4"/><line x1="18" y1="28" x2="38" y2="28" stroke="#5eead4" stroke-width="1" opacity="0.5"/></svg>
         </div>
-    </footer>
+        <div class="name">Event-Driven</div>
+        <div class="desc">Kafka, RabbitMQ, and the discipline to design contracts before producers.</div>
+        <div class="level" style="--lvl:86%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 04</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><ellipse cx="28" cy="14" rx="18" ry="6" fill="none" stroke="#10b981" stroke-width="1.5"/><path d="M10,14 L10,42 C10,46 18,48 28,48 C38,48 46,46 46,42 L46,14" stroke="#10b981" stroke-width="1.5" fill="none"/><ellipse cx="28" cy="28" rx="18" ry="6" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.6"/></svg>
+        </div>
+        <div class="name">Databases</div>
+        <div class="desc">PostgreSQL, MySQL, MongoDB, OpenSearch — choose the boring one unless data demands otherwise.</div>
+        <div class="level" style="--lvl:88%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 05</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><path d="M14,18 L28,10 L42,18 L42,38 L28,46 L14,38 Z" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="28" cy="28" r="4" fill="#5eead4"/><line x1="28" y1="14" x2="28" y2="24" stroke="#5eead4" stroke-width="1"/><line x1="28" y1="32" x2="28" y2="42" stroke="#5eead4" stroke-width="1"/><line x1="18" y1="22" x2="24" y2="26" stroke="#5eead4" stroke-width="1"/><line x1="32" y1="30" x2="38" y2="34" stroke="#5eead4" stroke-width="1"/></svg>
+        </div>
+        <div class="name">Cloud / AWS</div>
+        <div class="desc">EC2, S3, ECR, EKS, ECS — and the Azure DevOps escape hatch when the client insists.</div>
+        <div class="level" style="--lvl:82%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 06</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><circle cx="14" cy="20" r="4" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="42" cy="20" r="4" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="28" cy="40" r="4" fill="none" stroke="#5eead4" stroke-width="1.5"/><line x1="14" y1="20" x2="42" y2="20" stroke="#5eead4" stroke-width="1"/><line x1="14" y1="20" x2="28" y2="40" stroke="#5eead4" stroke-width="1"/><line x1="42" y1="20" x2="28" y2="40" stroke="#5eead4" stroke-width="1"/></svg>
+        </div>
+        <div class="name">CI / CD</div>
+        <div class="desc">Jenkins, GitHub Actions, Bitbucket Pipeline, AWS Pipeline — pipelines that ship without theatrics.</div>
+        <div class="level" style="--lvl:85%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 07</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><circle cx="20" cy="22" r="8" fill="none" stroke="#10b981" stroke-width="1.5"/><circle cx="36" cy="22" r="8" fill="none" stroke="#10b981" stroke-width="1.5"/><path d="M10,46 C10,38 16,34 20,34 C24,34 30,38 30,46" stroke="#5eead4" stroke-width="1.5" fill="none"/><path d="M26,46 C26,38 32,34 36,34 C40,34 46,38 46,46" stroke="#5eead4" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div class="name">Leadership</div>
+        <div class="desc">Mentoring, code standards, and translating product asks into engineering plans.</div>
+        <div class="level" style="--lvl:88%"></div>
+      </div>
+      <div class="skill-cell">
+        <div class="num">// 08</div>
+        <div class="icon">
+          <svg viewBox="0 0 56 56" width="56" height="56"><rect x="10" y="10" width="36" height="36" fill="none" stroke="#10b981" stroke-width="1.5"/><rect x="10" y="10" width="36" height="36" fill="none" stroke="#5eead4" stroke-width="1" opacity="0.5" transform="rotate(15 28 28)"/><circle cx="28" cy="28" r="6" fill="#5eead4" opacity="0.6"/></svg>
+        </div>
+        <div class="name">Integrations</div>
+        <div class="desc">SAP via WSDL, REST, gRPC, low-code (Wavemaker) — meeting legacy systems where they are.</div>
+        <div class="level" style="--lvl:80%"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+<!-- ============= NOTABLE WORK ============= -->
+<section id="work" class="section-pad" data-screen-label="04 Notable Work">
+  <span class="sec-label"><span class="idx">04</span> Notable work</span>
+  <div class="container">
+    <div class="projects-head reveal">
+      <h2>Notable<br/><span class="ital">work</span>, 2020 — '26</h2>
+      <span class="count">05 / initiatives</span>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Featured / large -->
+      <article class="project-card span2 reveal">
+        <div class="pc-thumb">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0d1f1c"/>
+                <stop offset="1" stop-color="#06120f"/>
+              </linearGradient>
+              <pattern id="pp1" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M0,20 L20,0" stroke="#10b981" stroke-width="0.5" opacity="0.15"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="url(#pg1)"/>
+            <rect width="400" height="300" fill="url(#pp1)"/>
+            <g transform="translate(200, 150)">
+              <rect x="-90" y="-50" width="60" height="100" fill="none" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+              <line x1="-30" y1="0" x2="30" y2="0" stroke="#5eead4" stroke-width="1" opacity="0.7"/>
+              <polyline points="20,-6 30,0 20,6" fill="none" stroke="#5eead4" stroke-width="1"/>
+              <rect x="30" y="-60" width="36" height="36" fill="none" stroke="#5eead4" stroke-width="1"/>
+              <rect x="30" y="-12" width="36" height="36" fill="none" stroke="#5eead4" stroke-width="1"/>
+              <rect x="30" y="36" width="36" height="24" fill="none" stroke="#5eead4" stroke-width="1"/>
+              <circle cx="48" cy="-42" r="3" fill="#10b981"/>
+              <circle cx="48" cy="6" r="3" fill="#10b981"/>
+              <circle cx="48" cy="48" r="3" fill="#10b981"/>
+            </g>
+            <text x="20" y="280" fill="#5eead4" font-family="JetBrains Mono" font-size="10" opacity="0.6">PROJECT_THUMBNAIL · MONOLITH_TO_MICROSERVICES</text>
+          </svg>
+        </div>
+        <div class="pc-body pc-inner">
+          <div>
+            <div class="pc-meta">
+              <span>Tech Lead · 2024 — Present</span>
+              <span class="tag">★ Featured</span>
+            </div>
+            <h3>Big-Bang Migration <span class="ital">— core platform</span></h3>
+            <p class="pc-desc">
+              Led the migration of PT. DBO's core application from a monolithic architecture to microservices using a Big-Bang cutover. Owned the service boundary design, contract definitions, deployment topology, and operational runbooks. Outcome: faster deploys, cleaner scaling, materially lower infrastructure cost — and an engineering team that now thinks in services.
+            </p>
+            <div class="pc-stack">
+              <span>Go</span><span>gRPC</span><span>Kafka</span><span>PostgreSQL</span><span>Docker</span><span>AWS EKS</span>
+            </div>
+          </div>
+          <a href="#contact" class="pc-link">
+            Discuss the migration
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-inner">
+          <div class="pc-thumb">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="300" fill="#0a1411"/>
+              <g transform="translate(50, 50)" opacity="0.8">
+                <rect width="300" height="200" fill="none" stroke="#10b981" stroke-width="1"/>
+                <line x1="0" y1="50" x2="300" y2="50" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
+                <line x1="0" y1="100" x2="300" y2="100" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
+                <line x1="0" y1="150" x2="300" y2="150" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
+                <path d="M0,140 L40,120 L80,130 L120,80 L160,90 L200,40 L240,60 L280,20 L300,30" stroke="#5eead4" stroke-width="2" fill="none"/>
+                <path d="M0,140 L40,120 L80,130 L120,80 L160,90 L200,40 L240,60 L280,20 L300,30 L300,200 L0,200 Z" fill="#10b981" opacity="0.1"/>
+              </g>
+              <text x="20" y="280" fill="#5eead4" font-family="JetBrains Mono" font-size="10" opacity="0.6">PROJECT_THUMBNAIL · CORE_V2</text>
+            </svg>
+          </div>
+          <div class="pc-meta">
+            <span>Software Engineer · 2023 — '24</span>
+            <span class="tag">Internal</span>
+          </div>
+          <h3>Core App v2.0 <span class="ital">— delivery</span></h3>
+          <p class="pc-desc">
+            Delivered Core Business Application v2.0 end to end. Automated workflows across multiple departments, reduced operational cost, and shipped a data-migration program that moved live production data into the new schema.
+          </p>
+          <div class="pc-stack">
+            <span>Go</span><span>PostgreSQL</span><span>CI/CD</span>
+          </div>
+          <a href="#experience" class="pc-link">See the role
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-inner">
+          <div class="pc-thumb">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="300" fill="#0a1411"/>
+              <g transform="translate(200, 150)">
+                <polygon points="0,-80 70,-40 70,40 0,80 -70,40 -70,-40" fill="none" stroke="#10b981" stroke-width="1"/>
+                <polygon points="0,-80 70,-40 0,0 -70,-40" fill="#5eead4" opacity="0.15"/>
+                <polygon points="70,-40 70,40 0,0" fill="#10b981" opacity="0.2"/>
+                <polygon points="-70,-40 -70,40 0,0" fill="#10b981" opacity="0.15"/>
+                <line x1="0" y1="-80" x2="0" y2="0" stroke="#5eead4" stroke-width="0.5"/>
+                <line x1="70" y1="-40" x2="0" y2="0" stroke="#5eead4" stroke-width="0.5"/>
+                <line x1="-70" y1="-40" x2="0" y2="0" stroke="#5eead4" stroke-width="0.5"/>
+              </g>
+              <text x="20" y="280" fill="#5eead4" font-family="JetBrains Mono" font-size="10" opacity="0.6">PROJECT_THUMBNAIL · RBAC</text>
+            </svg>
+          </div>
+          <div class="pc-meta">
+            <span>Software Engineer · 2023</span>
+            <span class="tag">Architecture</span>
+          </div>
+          <h3>Dynamic RBAC <span class="ital">— access control</span></h3>
+          <p class="pc-desc">
+            Redesigned the internal role-based access control layer to be dynamic and policy-driven. Permissions became configurable at runtime, audit trails became sane, and the support tickets for "I can't see X" mostly stopped.
+          </p>
+          <div class="pc-stack">
+            <span>Go</span><span>PostgreSQL</span><span>RBAC</span>
+          </div>
+          <a href="#experience" class="pc-link">See the role
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-inner">
+          <div class="pc-thumb">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="300" fill="#0a1411"/>
+              <g transform="translate(200, 150)">
+                <circle r="100" fill="none" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+                <circle r="100" fill="none" stroke="#5eead4" stroke-width="1" stroke-dasharray="3 6"/>
+                <g opacity="0.8">
+                  <circle cx="0" cy="-100" r="6" fill="#5eead4"/>
+                  <circle cx="86" cy="50" r="6" fill="#5eead4"/>
+                  <circle cx="-86" cy="50" r="6" fill="#5eead4"/>
+                  <circle cx="50" cy="-86" r="4" fill="#10b981"/>
+                  <circle cx="-50" cy="-86" r="4" fill="#10b981"/>
+                  <circle cx="100" cy="0" r="4" fill="#10b981"/>
+                </g>
+                <line x1="0" y1="-100" x2="86" y2="50" stroke="#5eead4" stroke-width="0.5" opacity="0.4"/>
+                <line x1="0" y1="-100" x2="-86" y2="50" stroke="#5eead4" stroke-width="0.5" opacity="0.4"/>
+                <line x1="86" y1="50" x2="-86" y2="50" stroke="#5eead4" stroke-width="0.5" opacity="0.4"/>
+              </g>
+              <text x="20" y="280" fill="#5eead4" font-family="JetBrains Mono" font-size="10" opacity="0.6">PROJECT_THUMBNAIL · GRPC</text>
+            </svg>
+          </div>
+          <div class="pc-meta">
+            <span>Software Engineer · 2023 — '24</span>
+            <span class="tag">Performance</span>
+          </div>
+          <h3>gRPC Adoption <span class="ital">— internal traffic</span></h3>
+          <p class="pc-desc">
+            Replaced chatty internal REST calls with gRPC across service boundaries. Cut inter-service latency, tightened contracts via protobuf, and gave the team a serious story for backward compatibility.
+          </p>
+          <div class="pc-stack">
+            <span>Go</span><span>gRPC</span><span>Protobuf</span>
+          </div>
+          <a href="#experience" class="pc-link">See the role
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-inner">
+          <div class="pc-thumb">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="300" fill="#0a1411"/>
+              <g transform="translate(60, 50)">
+                <rect width="60" height="200" fill="#10b981" opacity="0.6"/>
+                <rect x="80" width="60" height="160" y="40" fill="#5eead4" opacity="0.4"/>
+                <rect x="160" width="60" height="120" y="80" fill="#10b981" opacity="0.5"/>
+                <rect x="240" width="60" height="180" y="20" fill="#5eead4" opacity="0.5"/>
+              </g>
+              <line x1="40" y1="250" x2="380" y2="250" stroke="#5eead4" stroke-width="1" opacity="0.5"/>
+              <text x="20" y="280" fill="#5eead4" font-family="JetBrains Mono" font-size="10" opacity="0.6">PROJECT_THUMBNAIL · SAP_INTEGRATION</text>
+            </svg>
+          </div>
+          <div class="pc-meta">
+            <span>Application Programmer · 2020 — '23</span>
+            <span class="tag">Enterprise</span>
+          </div>
+          <h3>SAP Integration <span class="ital">— WSDL bridge</span></h3>
+          <p class="pc-desc">
+            Integrated PHE's internal enterprise apps with SAP through WSDL-based interfaces. Plus a handful of low-code Wavemaker apps shipping to internal users while the rest of IT was still drafting requirements.
+          </p>
+          <div class="pc-stack">
+            <span>C#</span><span>Java</span><span>SAP</span><span>Wavemaker</span>
+          </div>
+          <a href="#experience" class="pc-link">See the role
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============= EXPERIENCE ============= -->
+<section id="experience" class="section-pad" data-screen-label="05 Experience">
+  <span class="sec-label"><span class="idx">05</span> Experience</span>
+  <div class="container">
+    <h2 class="exp-h reveal">Where I've<br/><span class="ital">left fingerprints</span>.</h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="date">Mar 2024 — Present</div>
+        <div class="role">Technical Coordinator (Tech Lead)<span class="org">PT. DBO · Jakarta</span></div>
+        <div class="desc">Set technical direction, enforce coding standards, mentor engineers, and translate business asks into delivery plans. Drove continuous improvement in CI/CD and code quality. Led the big-bang migration from monolith to microservices, improving scalability and meaningfully reducing operational cost.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="date">Mar 2023 — Feb 2024</div>
+        <div class="role">Software Engineer<span class="org">PT. DBO · Jakarta</span></div>
+        <div class="desc">Improved backend logic and overall system performance. Delivered Core Business Application v2.0 alongside a data-migration program. Hardened dynamic role-based access control and adopted gRPC across service boundaries to cut internal latency.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="date">Mar 2020 — Feb 2023</div>
+        <div class="role">Application Programmer<span class="org">PT. Pertamina Hulu Energi · Jakarta</span></div>
+        <div class="desc">Maintained and extended enterprise applications using C#, VB, and JavaScript over SQL Server and Oracle. Built internal apps with Wavemaker (Java + JS), integrated systems with SAP via WSDL, and provided technical advisory across multiple IT projects under Agile SDLC.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= EDUCATION ============= -->
+<section id="formation" class="section-pad" data-screen-label="06 Education">
+  <span class="sec-label"><span class="idx">06</span> Formation</span>
+  <div class="container">
+    <div class="reveal" style="max-width: 900px;">
+      <h2 style="font-size: 48px; letter-spacing: -0.02em; margin-bottom: 40px;"><span class="ital">Education</span></h2>
+      <div class="ed-list">
+        <div class="ed-item">
+          <div class="year">2014 — 18</div>
+          <div class="main">
+            Bachelor's Degree, Information Systems
+            <span class="sub">Amikom Yogyakarta University</span>
+          </div>
+          <div class="right">GPA 3.25</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= CONTACT / FOOTER ============= -->
+<section id="contact" class="contact" data-screen-label="07 Contact">
+  <div class="contact-canvas"></div>
+  <div class="contact-inner reveal-stagger">
+    <span class="eyebrow">Let's build something</span>
+    <h2>
+      Have an<br/>
+      <span class="ital">interesting</span> problem?<br/>
+      <span class="stroke">Let's talk.</span>
+    </h2>
+    <a href="mailto:pikritaufanaziz@gmail.com" class="contact-mail">pikritaufanaziz@gmail.com</a>
+    <div class="socials">
+      <a href="https://github.com/Trickster-ID" target="_blank" rel="noopener">GitHub <span style="opacity:.5">↗</span></a>
+      <a href="https://www.linkedin.com/in/pikri/" target="_blank" rel="noopener">LinkedIn <span style="opacity:.5">↗</span></a>
+      <a href="mailto:pikritaufanaziz@gmail.com">Email <span style="opacity:.5">↗</span></a>
+      <a href="tel:+6285810333389">+62 858 1033 3389 <span style="opacity:.5">↗</span></a>
+    </div>
+    <div class="foot-meta">
+      <span>© 2026 Pikri Taufan Aziz · Built in Jakarta</span>
+      <span>Crafted with Three.js · No frameworks were harmed</span>
+      <span data-clock>—</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============= SCRIPTS ============= -->
+<script>
+  window.TWEAK_DEFAULTS = {
+    "palette": "emerald",
+    "intensity": "balanced",
+    "type_voice": "editorial"
+  };
+</script>
+<script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+<script src="scene.js"></script>
+<script src="interactions.js"></script>
+<script src="tweaks.js"></script>
+
 </body>
 </html>
